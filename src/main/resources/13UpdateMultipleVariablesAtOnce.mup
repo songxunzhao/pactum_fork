@@ -1,0 +1,180 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Hello!",
+      "id": 1,
+      "attr": {
+        "position": [
+          -115,
+          -30,
+          1
+        ],
+        "style": {
+          "width": 50,
+          "backgroundColor": "#FFFFFF"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Choose one!",
+          "id": "2.f745.dc70c5aaf-4010.f36e69ad1",
+          "ideas": {
+            "1": {
+              "title": "Option A",
+              "id": "3.f745.dc70c5aaf-4010.f36e69ad1",
+              "ideas": {
+                "1": {
+                  "title": "Thanks!\nFee: {variables.fee}\nDays: {variables.days}",
+                  "id": "5.f745.dc70c5aaf-4010.f36e69ad1",
+                  "attr": {
+                    "style": {
+                      "backgroundColor": "#FFFFFF",
+                      "width": 133
+                    },
+                    "position": [
+                      201,
+                      17,
+                      1
+                    ]
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "Choose again!",
+                      "attr": {
+                        "style": {
+                          "backgroundColor": "#FFFFFF"
+                        },
+                        "parentConnector": {
+                          "label": "{variables}"
+                        },
+                        "position": [
+                          235,
+                          19,
+                          1
+                        ]
+                      },
+                      "ideas": {
+                        "1": {
+                          "title": "Option A",
+                          "attr": {
+                            "parentConnector": {
+                              "label": "{ \"fee\": 16, \"days\": 4 }"
+                            },
+                            "position": [
+                              183,
+                              -79,
+                              3
+                            ]
+                          },
+                          "ideas": {
+                            "1": {
+                              "title": "Thanks!\nFee: {variables.fee}\nDays: {variables.days}",
+                              "attr": {
+                                "style": {
+                                  "backgroundColor": "#FFFFFF",
+                                  "width": 133
+                                },
+                                "position": [
+                                  201,
+                                  17,
+                                  1
+                                ]
+                              },
+                              "id": "8.0d00.f4f7fc513-6505.865edf1f5"
+                            }
+                          },
+                          "id": "7.0d00.f4f7fc513-6505.865edf1f5"
+                        },
+                        "2": {
+                          "title": "Option B",
+                          "attr": {
+                            "parentConnector": {
+                              "label": "{ \"fee\": 31, \"days\": 2 }"
+                            },
+                            "position": [
+                              178,
+                              44,
+                              4
+                            ]
+                          },
+                          "ideas": {},
+                          "id": "9.0d00.f4f7fc513-6505.865edf1f5"
+                        }
+                      },
+                      "id": "6.0d00.f4f7fc513-6505.865edf1f5"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "parentConnector": {
+                  "label": "{ \"fee\": 15, \"days\": 3 }"
+                },
+                "position": [
+                  183,
+                  -79,
+                  3
+                ]
+              }
+            },
+            "2": {
+              "title": "Option B",
+              "id": "4.f745.dc70c5aaf-4010.f36e69ad1",
+              "ideas": {},
+              "attr": {
+                "parentConnector": {
+                  "label": "{ \"fee\": 30, \"days\": 1 }"
+                },
+                "position": [
+                  178,
+                  44,
+                  4
+                ]
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FFFFFF"
+            },
+            "parentConnector": {
+              "label": "{variables}"
+            },
+            "position": [
+              172,
+              -1,
+              1
+            ]
+          }
+        }
+      }
+    }
+  },
+  "title": "Hi!",
+  "links": [
+    {
+      "ideaIdFrom": "4.f745.dc70c5aaf-4010.f36e69ad1",
+      "ideaIdTo": "5.f745.dc70c5aaf-4010.f36e69ad1",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": "9.0d00.f4f7fc513-6505.865edf1f5",
+      "ideaIdTo": "8.0d00.f4f7fc513-6505.865edf1f5",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    }
+  ]
+}

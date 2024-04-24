@@ -1,0 +1,21 @@
+{
+  "models": {
+    "parent1": {
+      "parent1Variable": 1
+    },
+    "parent2": {
+      "parent1Variable": 2,
+      "parent2Variable": 1
+    },
+    "child": {
+      "name": "John",
+      "company": "Microsoft",
+      "limit": 100.00,
+      "parent1Variable": 3,
+      "@include": [
+        "parent1",
+        "parent2"
+      ]
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "name": "pactum-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/runtime": "^7.7.7",
+    "@pactum-ai/pactum-chat": "1.0.42",
+    "bootstrap": "^4.3.1",
+    "connected-react-router": "^6.3.2",
+    "flatted": "^2.0.0",
+    "gensync": "^1.0.0-beta.1",
+    "history": "^4.7.2",
+    "jwt-decode": "^2.2.0",
+    "moment": "^2.24.0",
+    "node-sass": "^4.14.1",
+    "portable-fetch": "^3.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-app-polyfill": "^1.0.4",
+    "react-bootstrap": "^1.0.0-beta.5",
+    "react-dom": "^16.13.1",
+    "react-ga": "^2.6.0",
+    "react-redux": "^6.0.1",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-router-transition": "^1.3.0",
+    "react-scripts": "3.0.0",
+    "react-select": "^2.4.3",
+    "redux": "^4.0.1",
+    "redux-form": "^8.1.0",
+    "redux-starter-kit": "^0.4.3",
+    "styled-components": "^4.3.0",
+    "sweetalert2": "^8.8.3",
+    "typescript": "^3.3.3333",
+    "utility-types": "^3.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start:https": "HTTPS=true react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "test:lint:ts": "tsc --noEmit && eslint \"./src/**/*.{js,ts,tsx}\" --quiet --fix",
+    "test:lint:css": "stylelint \"src/**/*.css\"",
+    "test:unit": "react-scripts test",
+    "test:unit:coverage": "react-scripts test --coverage --reporters=default --reporters=jest-html-reporter --reporters=jest-junit",
+    "test": "yarn test:lint:ts && yarn test:lint:css && yarn test:unit:coverage",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "//": "https://pactum.com",
+  "proxy": "http://localhost:8080",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "ie 11",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/api/**/*.*",
+      "!src/setupTests.ts",
+      "!src/serviceWorker.js"
+    ],
+    "coverageReporters": [
+      "lcov"
+    ]
+  },
+  "devDependencies": {
+    "@babel/helper-validator-identifier": "^7.9.5",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@types/enzyme": "^3.9.1",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.9",
+    "@types/jwt-decode": "^2.2.1",
+    "@types/node": "^11.10.4",
+    "@types/react": "^16.8.6",
+    "@types/react-bootstrap": "^0.32.17",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-redux": "^7.0.1",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/react-select": "^2.0.17",
+    "@types/react-test-renderer": "^16.8.1",
+    "@types/redux-form": "^7.5.3",
+    "@types/styled-components": "^4.1.16",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest-fetch-mock": "^2.1.2",
+    "jest-html-reporter": "^2.5.0",
+    "jest-junit": "^6.3.0",
+    "jest-localstorage-mock": "^2.4.0",
+    "prettier": "^1.17.1",
+    "react-test-renderer": "^16.8.5",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0"
+  }
+}

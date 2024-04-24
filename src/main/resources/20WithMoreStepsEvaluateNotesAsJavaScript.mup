@@ -1,0 +1,205 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Hi! Please enter your salary",
+      "id": "104.7a2c.863782733-9f5f.0addd95c1",
+      "attr": {
+        "position": [
+          -1149,
+          -611,
+          1
+        ],
+        "style": {
+          "width": 155,
+          "backgroundColor": "#FFFFFF"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "{salary}",
+          "id": "105.7a2c.863782733-9f5f.0addd95c1",
+          "attr": {
+            "style": {
+              "backgroundColor": "#CCFFFF"
+            },
+            "note": {
+              "index": 2,
+              "text": "<eval_expression>\nvalues[\"{enteringSalary}\"] = true;\n</eval_expression>"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Please confirm your salary",
+              "id": "106.7a2c.863782733-9f5f.0addd95c1",
+              "attr": {
+                "style": {
+                  "backgroundColor": "#FFFFFF"
+                }
+              },
+              "ideas": {
+                "1": {
+                  "title": "{salary}",
+                  "id": "107.7a2c.863782733-9f5f.0addd95c1",
+                  "attr": {
+                    "style": {
+                      "backgroundColor": "#CCFFFF"
+                    },
+                    "note": {
+                      "index": 4,
+                      "text": "<eval_expression>\nvalues[\"{reEnteringSalary}\"] = true;\n</eval_expression>"
+                    }
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "Please, enter your age",
+                      "id": "109.7a2c.863782733-9f5f.0addd95c1",
+                      "attr": {
+                        "style": {
+                          "backgroundColor": "#FFFFFF"
+                        }
+                      },
+                      "ideas": {
+                        "1": {
+                          "title": "{age}",
+                          "id": "110.7a2c.863782733-9f5f.0addd95c1",
+                          "attr": {
+                            "style": {
+                              "backgroundColor": "#CCFFFF"
+                            },
+                            "note": {
+                              "index": 6,
+                              "text": "<eval_expression>\nvalues[\"{enteringAge}\"] = true;\n</eval_expression>"
+                            }
+                          },
+                          "ideas": {
+                            "1": {
+                              "title": "You are eligible to vote",
+                              "id": "111.7a2c.863782733-9f5f.0addd95c1",
+                              "attr": {
+                                "style": {
+                                  "backgroundColor": "#FFFFFF"
+                                },
+                                "parentConnector": {
+                                  "label": "value > 18"
+                                },
+                                "position": [
+                                  73,
+                                  -119,
+                                  2
+                                ]
+                              }
+                            },
+                            "2": {
+                              "title": "You are ineligible to vote",
+                              "id": "114.7a2c.863782733-9f5f.0addd95c1",
+                              "attr": {
+                                "style": {
+                                  "backgroundColor": "#FFFFFF"
+                                },
+                                "parentConnector": {
+                                  "label": "value < 18"
+                                },
+                                "position": [
+                                  85,
+                                  101.33333349227905,
+                                  3
+                                ]
+                              },
+                              "ideas": {}
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "id": "53.7a2c.863782733-9f5f.0addd95c1"
+        }
+      }
+    },
+    "2": {
+      "title": "We would like to offer you our interest rate",
+      "id": "115.7a2c.863782733-9f5f.0addd95c1",
+      "attr": {
+        "style": {
+          "backgroundColor": "#FFFFFF"
+        },
+        "position": [
+          -145,
+          -639.666666507721,
+          1
+        ],
+        "note": {
+          "index": 9,
+          "text": "<eval_expression>\nvalues[\"{offeringInterestRate\"] = true;\n</eval_expression>"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "We offer you 5% interest rate",
+          "id": "116.7a2c.863782733-9f5f.0addd95c1",
+          "attr": {
+            "position": [
+              173,
+              -149,
+              2
+            ],
+            "style": {
+              "backgroundColor": "#FFFFFF"
+            },
+            "parentConnector": {
+              "label": "steps[\"{salary}\"] < 10000"
+            }
+          }
+        },
+        "11": {
+          "title": "We offer you 10% interest rate",
+          "id": "117.7a2c.863782733-9f5f.0addd95c1",
+          "attr": {
+            "position": [
+              166.3333740234375,
+              103.66666650772095,
+              3
+            ],
+            "style": {
+              "backgroundColor": "#FFFFFF"
+            },
+            "parentConnector": {
+              "label": "steps[\"{salary}\"] > 10000"
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Hi!",
+  "links": [
+    {
+      "ideaIdFrom": "114.7a2c.863782733-9f5f.0addd95c1",
+      "ideaIdTo": "115.7a2c.863782733-9f5f.0addd95c1",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": "111.7a2c.863782733-9f5f.0addd95c1",
+      "ideaIdTo": "115.7a2c.863782733-9f5f.0addd95c1",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    }
+  ]
+}

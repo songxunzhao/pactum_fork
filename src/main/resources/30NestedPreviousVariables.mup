@@ -1,0 +1,53 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Hello, [vendor_name]!",
+      "id": 1,
+      "attr": {
+        "position": [
+          -23,
+          -15,
+          1
+        ],
+        "style": {
+          "backgroundColor": "#FFFFFF"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Hello again!\n\nFrom model file: [items]\n\nAfter assignment to local variable: {items}",
+          "id": "5.7713.2a8665801-0675.97d4b3c19",
+          "attr": {
+            "style": {
+              "backgroundColor": "#FFFFFF"
+            },
+            "note": {
+              "index": 2,
+              "text": "<eval_expression>\nvar items = [items]\nvalues[\"{items}\"] = items\n</eval_expression>"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Next step, the same thing:\n\nFrom model file: [items]\n\nAfter assignment to local variable in the previous step: {items}\n",
+              "id": "6.3fdb.f7b7ad7a-620d.d8354c7bd",
+              "attr": {
+                "style": {
+                  "backgroundColor": "#FFFFFF",
+                  "width": 142.997
+                }
+              },
+              "ideas": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Hello, [vendor_name]!",
+  "attr": {
+    "theme": "topdownStandard"
+  },
+  "links": []
+}

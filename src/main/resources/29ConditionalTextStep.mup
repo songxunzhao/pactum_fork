@@ -1,0 +1,289 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Hello, [vendor_name]!",
+      "id": 1,
+      "attr": {
+        "position": [
+          -71,
+          -15,
+          1
+        ],
+        "style": {
+          "backgroundColor": "#FFFFFF"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Multiple choice with variables (encoded as \"default\" color)",
+          "id": "2.d290.32107c65c-3a6a.f83c0e1e2",
+          "attr": {
+            "style": {
+              "backgroundColor": "#FFFFFF"
+            },
+            "parentConnector": {
+              "label": "{multiple_choice1}"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Option 1: value 5",
+              "id": "3.d290.32107c65c-3a6a.f83c0e1e2",
+              "attr": {
+                "parentConnector": {
+                  "label": "5"
+                }
+              },
+              "ideas": {
+                "1": {
+                  "title": "The value recorded with you choice into variable multiple_choice: {multiple_choice1}",
+                  "id": "5.d290.32107c65c-3a6a.f83c0e1e2",
+                  "attr": {
+                    "style": {
+                      "backgroundColor": "#FFFFFF"
+                    }
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "Enter a positive real value (default is positive real value, color code of the node in MindMup is light blue -- one left from white).\n\nIt will remove different signs (space, \"%\", \"€\" and \"$\") and does not allow to enter a negative number.",
+                      "id": "6.d290.32107c65c-3a6a.f83c0e1e2",
+                      "attr": {
+                        "style": {
+                          "backgroundColor": "#FFFFFF"
+                        }
+                      },
+                      "ideas": {
+                        "1": {
+                          "title": "{input1}",
+                          "id": "7.d290.32107c65c-3a6a.f83c0e1e2",
+                          "attr": {
+                            "style": {
+                              "backgroundColor": "#CCFFFF"
+                            }
+                          },
+                          "ideas": {
+                            "1": {
+                              "title": "You entered {input1} that is smaller than [threshold] (the threshold for branching was set in model file)",
+                              "id": "8.d290.32107c65c-3a6a.f83c0e1e2",
+                              "ideas": {
+                                "2": {
+                                  "title": "You can also enter free text (it must be specifiec in the notes).\n",
+                                  "id": "13.d290.32107c65c-3a6a.f83c0e1e2",
+                                  "attr": {
+                                    "style": {
+                                      "backgroundColor": "#FFFFFF"
+                                    }
+                                  },
+                                  "ideas": {
+                                    "2": {
+                                      "title": "{input2}",
+                                      "id": "14.d290.32107c65c-3a6a.f83c0e1e2",
+                                      "ideas": {
+                                        "1": {
+                                          "title": "You inserted: {input2}",
+                                          "id": "15.d290.32107c65c-3a6a.f83c0e1e2",
+                                          "ideas": {
+                                            "1": {
+                                              "title": "It is possible to branch based on previous values",
+                                              "id": "10.d290.32107c65c-3a6a.f83c0e1e2",
+                                              "attr": {
+                                                "style": {
+                                                  "backgroundColor": "#FFFFFF"
+                                                }
+                                              },
+                                              "ideas": {
+                                                "1": {
+                                                  "title": "You picked the first option with value: {multiple_choice1}",
+                                                  "id": "11.d290.32107c65c-3a6a.f83c0e1e2",
+                                                  "ideas": {
+                                                    "1": {
+                                                      "title": "You can do calculations in the notes. I am adding 1 in notes in the same node to the number you inputed before: {result}",
+                                                      "id": "16.d290.32107c65c-3a6a.f83c0e1e2",
+                                                      "attr": {
+                                                        "style": {
+                                                          "backgroundColor": "#FFFFFF"
+                                                        },
+                                                        "note": {
+                                                          "index": 13,
+                                                          "text": "<eval_expression>\nvalues[\"{result}\"] = previousValues[\"{input1}\"] + 1\n</eval_expression>"
+                                                        }
+                                                      },
+                                                      "ideas": {
+                                                        "1": {
+                                                          "title": "You can use these calculations to set flags to understand where the vendor has been.\n\nAlso, you can manipulate strings.",
+                                                          "id": "18.d290.32107c65c-3a6a.f83c0e1e2",
+                                                          "attr": {
+                                                            "style": {
+                                                              "backgroundColor": "#FFFFFF"
+                                                            }
+                                                          },
+                                                          "ideas": {
+                                                            "1": {
+                                                              "title": "You can use HTML tags for:\n1. images\n2. <b>bold</b>\n3. lists (in here I just typed the numbers)\n\nNew line comes with shift+enter.",
+                                                              "id": "19.d290.32107c65c-3a6a.f83c0e1e2",
+                                                              "attr": {
+                                                                "style": {
+                                                                  "backgroundColor": "#FFFFFF"
+                                                                }
+                                                              },
+                                                              "ideas": {
+                                                                "2": {
+                                                                  "title": "We have extra things that we did not mention:\n\n1. Multiple choice possibility: choose k out of n\n\n2. Hierarchical variables with lists and dictionaries.\n\n3. In addition to free text and positive numeric answers, it is possible to validate dates, e-mail addresses, and telephone numbers.",
+                                                                  "id": "22.d290.32107c65c-3a6a.f83c0e1e2",
+                                                                  "ideas": {
+                                                                    "1": {
+                                                                      "title": "Things you cannot do:\n\n1. You cannot branch after multiple choice\n\n2. You cannot evaluate the code in notes at the first node\n\n3. You cannot evaluate notes at multiple option steps, you can do it at the next step.\n\n4. If you are branching the nodes then it must have at least one direct child node. It's not possible to branch with only links.",
+                                                                      "id": "21.d290.32107c65c-3a6a.f83c0e1e2",
+                                                                      "attr": {
+                                                                        "style": {
+                                                                          "backgroundColor": "#FFFFFF",
+                                                                          "width": 331.989
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "attr": {
+                                                                    "style": {
+                                                                      "backgroundColor": "#FFFFFF",
+                                                                      "width": 330
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "attr": {
+                                                    "style": {
+                                                      "backgroundColor": "#FFFFFF",
+                                                      "width": 239.986
+                                                    },
+                                                    "parentConnector": {
+                                                      "label": "steps[\"{multiple_choice1}\"].value == 5 && 1==1"
+                                                    }
+                                                  }
+                                                },
+                                                "2": {
+                                                  "title": "You picked the second option with value: {multiple_choice1}",
+                                                  "id": "12.d290.32107c65c-3a6a.f83c0e1e2",
+                                                  "attr": {
+                                                    "style": {
+                                                      "backgroundColor": "#FFFFFF",
+                                                      "width": 307.983
+                                                    },
+                                                    "parentConnector": {
+                                                      "label": "steps[\"{multiple_choice1}\"].value == 15"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "attr": {
+                                            "style": {
+                                              "backgroundColor": "#FFFFFF"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "attr": {
+                                        "style": {
+                                          "backgroundColor": "#CCFFFF"
+                                        },
+                                        "note": {
+                                          "index": 9,
+                                          "text": "<step_properties>\n{\n  \"format\": \"any\"\n}\n</step_properties>"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "attr": {
+                                "parentConnector": {
+                                  "label": "value < [threshold]"
+                                },
+                                "style": {
+                                  "backgroundColor": "#FFFFFF"
+                                }
+                              }
+                            },
+                            "2": {
+                              "title": "You entered {input1} that is larger or equal than [threshold] (the threshold for branching was set in model file)",
+                              "id": "9.d290.32107c65c-3a6a.f83c0e1e2",
+                              "attr": {
+                                "parentConnector": {
+                                  "label": "value >= [threshold]"
+                                },
+                                "style": {
+                                  "backgroundColor": "#FFFFFF"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "Option 2: value 15",
+              "id": "4.d290.32107c65c-3a6a.f83c0e1e2",
+              "attr": {
+                "parentConnector": {
+                  "label": "15"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Hello, [vendor_name]!",
+  "attr": {
+    "theme": "topdownStandard"
+  },
+  "links": [
+    {
+      "ideaIdFrom": "4.d290.32107c65c-3a6a.f83c0e1e2",
+      "ideaIdTo": "5.d290.32107c65c-3a6a.f83c0e1e2",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": "12.d290.32107c65c-3a6a.f83c0e1e2",
+      "ideaIdTo": "16.d290.32107c65c-3a6a.f83c0e1e2",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": "9.d290.32107c65c-3a6a.f83c0e1e2",
+      "ideaIdTo": "13.d290.32107c65c-3a6a.f83c0e1e2",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    }
+  ]
+}

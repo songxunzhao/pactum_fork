@@ -1,0 +1,12 @@
+{
+  "models": {
+    "1": {
+      "chatParams": {
+        "name": "Walmart",
+        "secure": false,
+        "scriptEngine": "JS",
+        "botAvatar": "somebase64image"
+      }
+    }
+  }
+}

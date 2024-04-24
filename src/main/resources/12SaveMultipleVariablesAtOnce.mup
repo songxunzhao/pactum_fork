@@ -1,0 +1,92 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Hello!",
+      "id": 1,
+      "attr": {
+        "position": [
+          -115,
+          -30,
+          1
+        ],
+        "style": {
+          "width": 50,
+          "backgroundColor": "#FFFFFF"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Choose one!",
+          "id": "2.f745.dc70c5aaf-4010.f36e69ad1",
+          "ideas": {
+            "1": {
+              "title": "Option A",
+              "id": "3.f745.dc70c5aaf-4010.f36e69ad1",
+              "ideas": {
+                "1": {
+                  "title": "Thanks!\nFee: {variables.fee}\nDays: {variables.days}",
+                  "id": "5.f745.dc70c5aaf-4010.f36e69ad1",
+                  "attr": {
+                    "style": {
+                      "backgroundColor": "#FFFFFF",
+                      "width": 133
+                    },
+                    "position": [
+                      201,
+                      17,
+                      1
+                    ]
+                  }
+                }
+              },
+              "attr": {
+                "parentConnector": {
+                  "label": "{ \"fee\": 15, \"days\": 3 }"
+                }
+              }
+            },
+            "2": {
+              "title": "Option B",
+              "id": "4.f745.dc70c5aaf-4010.f36e69ad1",
+              "ideas": {},
+              "attr": {
+                "parentConnector": {
+                  "label": "{ \"fee\": 30, \"days\": 1 }"
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FFFFFF"
+            },
+            "parentConnector": {
+              "label": "{variables}"
+            },
+            "position": [
+              172,
+              -1,
+              1
+            ]
+          }
+        }
+      }
+    }
+  },
+  "title": "Hi!",
+  "links": [
+    {
+      "ideaIdFrom": "4.f745.dc70c5aaf-4010.f36e69ad1",
+      "ideaIdTo": "5.f745.dc70c5aaf-4010.f36e69ad1",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    }
+  ]
+}

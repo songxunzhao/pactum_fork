@@ -1,0 +1,46 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "This chat ends with an option step.",
+      "id": 1,
+      "attr": {
+        "position": [
+          -621,
+          -507,
+          1
+        ],
+        "style": {
+          "backgroundColor": "#FFFFFF"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Choose an option",
+          "id": "2.45d7.0a25c5bbf-cb09.67e3a6d17",
+          "attr": {
+            "style": {
+              "backgroundColor": "#FFFFFF"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Option 1",
+              "id": "3.45d7.0a25c5bbf-cb09.67e3a6d17"
+            },
+            "2": {
+              "title": "Option 2",
+              "id": "4.45d7.0a25c5bbf-cb09.67e3a6d17"
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "",
+  "attr": {
+    "theme": "topdownStandard"
+  },
+  "links": []
+}

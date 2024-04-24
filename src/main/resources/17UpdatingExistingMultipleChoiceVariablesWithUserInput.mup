@@ -1,0 +1,147 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Hello!",
+      "id": 1,
+      "attr": {
+        "position": [
+          -166,
+          38,
+          1
+        ],
+        "style": {
+          "width": 50,
+          "backgroundColor": "#FFFFFF"
+        }
+      },
+      "ideas": {
+        "11": {
+          "title": "Choose",
+          "attr": {
+            "style": {
+              "backgroundColor": "#FFFFFF"
+            },
+            "parentConnector": {
+              "label": "{number}"
+            },
+            "position": [
+              143,
+              -2,
+              1
+            ]
+          },
+          "ideas": {
+            "1": {
+              "title": "Option C",
+              "attr": {
+                "parentConnector": {
+                  "label": "45"
+                },
+                "position": [
+                  166,
+                  -29,
+                  2
+                ]
+              },
+              "ideas": {
+                "1": {
+                  "title": "Type a number",
+                  "attr": {
+                    "style": {
+                      "backgroundColor": "#FFFFFF"
+                    }
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "{number}",
+                      "attr": {
+                        "style": {
+                          "backgroundColor": "#CCFFFF"
+                        }
+                      },
+                      "ideas": {
+                        "1": {
+                          "title": "Thanks! {number}",
+                          "attr": {
+                            "style": {
+                              "backgroundColor": "#FFFFFF",
+                              "width": 95
+                            },
+                            "parentConnector": {
+                              "label": "value >= 100"
+                            },
+                            "position": [
+                              238,
+                              -11,
+                              5
+                            ]
+                          },
+                          "ideas": {},
+                          "id": "67.4ef8.59253373a-1e26.eab76fe05"
+                        },
+                        "2": {
+                          "title": "You entered below 100:\n{number}",
+                          "attr": {
+                            "position": [
+                              226,
+                              149,
+                              6
+                            ],
+                            "parentConnector": {
+                              "label": "value < 100"
+                            },
+                            "style": {
+                              "backgroundColor": "#FFFFFF",
+                              "width": 147
+                            }
+                          },
+                          "ideas": {},
+                          "id": "68.4ef8.59253373a-1e26.eab76fe05"
+                        }
+                      },
+                      "id": "66.4ef8.59253373a-1e26.eab76fe05"
+                    }
+                  },
+                  "id": "65.4ef8.59253373a-1e26.eab76fe05"
+                }
+              },
+              "id": "63.4ef8.59253373a-1e26.eab76fe05"
+            },
+            "2": {
+              "title": "Option D",
+              "attr": {
+                "parentConnector": {
+                  "label": "60"
+                },
+                "position": [
+                  157,
+                  54,
+                  3
+                ]
+              },
+              "ideas": {},
+              "id": "64.4ef8.59253373a-1e26.eab76fe05"
+            }
+          },
+          "id": "62.4ef8.59253373a-1e26.eab76fe05"
+        }
+      }
+    }
+  },
+  "title": "Hi!",
+  "links": [
+    {
+      "ideaIdFrom": "64.4ef8.59253373a-1e26.eab76fe05",
+      "ideaIdTo": "65.4ef8.59253373a-1e26.eab76fe05",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    }
+  ]
+}

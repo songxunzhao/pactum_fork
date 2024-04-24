@@ -1,0 +1,103 @@
+{
+  "steps": [
+    {
+      "id": "0e80096b-aa75-4d54-acd7-247ab4047cfa",
+      "message": "What?",
+      "trigger": "01935285-df69-339b-a1d7-e2a19565c872",
+      "metadata": ".TextStep"
+    },
+    {
+      "id": "01935285-df69-339b-a1d7-e2a19565c872",
+      "options": [
+        {
+          "value": "NqtSCOiq1HZQ",
+          "label": "yes",
+          "trigger": "83d01720-dc1b-4cf2-9f13-ef833d26e026"
+        },
+        {
+          "value": "hmbPXcTIbCFI",
+          "label": "no",
+          "trigger": "2e080aeb-b90f-4ca7-8769-6339491ab6b4"
+        },
+        {
+          "value": "xmWDNqQXeGUP",
+          "label": "maybe",
+          "trigger": "7df7f4f4-a13a-4673-be00-970d34312170"
+        }
+      ],
+      "metadata": ".OptionsStep"
+    },
+    {
+      "id": "83d01720-dc1b-4cf2-9f13-ef833d26e026",
+      "message": "And then?",
+      "trigger": "b9572097-ddea-3c1e-88b5-5faf505f9fa8",
+      "metadata": ".TextStep"
+    },
+    {
+      "id": "b9572097-ddea-3c1e-88b5-5faf505f9fa8",
+      "options": [
+        {
+          "value": "LNotjrGrT1Hk",
+          "label": "lol",
+          "trigger": "default_tys"
+        },
+        {
+          "value": "VJfqZOvtstAp",
+          "label": "wat",
+          "trigger": "default_tys"
+        }
+      ],
+      "metadata": ".OptionsStep"
+    },
+    {
+      "id": "2e080aeb-b90f-4ca7-8769-6339491ab6b4",
+      "message": "Why not?",
+      "trigger": "f704f7e4-2566-3ecf-96d1-1d96a6c97d33",
+      "metadata": ".TextStep"
+    },
+    {
+      "id": "f704f7e4-2566-3ecf-96d1-1d96a6c97d33",
+      "options": [
+        {
+          "value": "RbugCOyvUvXw",
+          "label": "just becuz",
+          "trigger": "default_tys"
+        },
+        {
+          "value": "j8IQJYSobIOM",
+          "label": "no reason",
+          "trigger": "default_tys"
+        }
+      ],
+      "metadata": ".OptionsStep"
+    },
+    {
+      "id": "7df7f4f4-a13a-4673-be00-970d34312170",
+      "message": "Maybe?",
+      "trigger": "5161b3c1-7523-315f-bfa6-01a5a9d5f167",
+      "metadata": ".TextStep"
+    },
+    {
+      "id": "5161b3c1-7523-315f-bfa6-01a5a9d5f167",
+      "options": [
+        {
+          "value": "DyxY2Sj8PPt3",
+          "label": "yes",
+          "trigger": "default_tys"
+        },
+        {
+          "value": "Hx7kWZjY4dnv",
+          "label": "no",
+          "trigger": "default_tys"
+        }
+      ],
+      "metadata": ".OptionsStep"
+    },
+    {
+      "id": "default_tys",
+      "message": "Thanks for completing this typeform\nNow *create your own* — it's free, easy, & beautiful",
+      "end": true,
+      "metadata": ".TextStep"
+    }
+  ]
+}

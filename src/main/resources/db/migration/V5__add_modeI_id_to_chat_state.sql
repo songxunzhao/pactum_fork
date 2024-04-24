@@ -1,0 +1,1 @@
+ALTER TABLE chat_state ADD COLUMN model_id VARCHAR(255)

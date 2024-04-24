@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+  <property name="LOGS" value="./logs" />
+
+  <appender name="Console"
+            class="ch.qos.logback.core.ConsoleAppender">
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <Pattern>
+        %d{ISO8601} %highlight(%-5level) %yellow(%C{1.}): %msg%n%throwable
+      </Pattern>
+    </layout>
+  </appender>
+
+  <appender name="RollingFile"
+            class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${LOGS}/console.log</file>
+    <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+      <providers>
+        <mdc/>
+        <timestamp>
+          <fieldName>ts</fieldName>
+        </timestamp>
+        <loggerName>
+          <fieldName>logger</fieldName>
+        </loggerName>
+        <pattern>
+          <pattern>{ "log": "#tryJson{%message}" }</pattern>
+        </pattern>
+        <stackTrace />
+        <rootStackTraceElement />
+      </providers>
+    </encoder>
+
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>${LOGS}/console-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+      <timeBasedFileNamingAndTriggeringPolicy
+        class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+        <maxFileSize>50MB</maxFileSize>
+      </timeBasedFileNamingAndTriggeringPolicy>
+    </rollingPolicy>
+  </appender>
+
+  <logger name="org.zalando.logbook" level="TRACE"/>
+
+  <root level="info" additivity="false">
+    <appender-ref ref="RollingFile" />
+    <appender-ref ref="Console" />
+  </root>
+
+</configuration>

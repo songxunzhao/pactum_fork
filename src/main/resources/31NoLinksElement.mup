@@ -1,0 +1,32 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Hi!",
+      "id": 1,
+      "attr": {
+        "style": {
+          "backgroundColor": "#FFFFFF"
+        },
+        "position": [
+          -79,
+          -24,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Child",
+          "id": "2.c035.1a9ac11de-e26e.7eb40825d",
+          "attr": {
+            "style": {
+              "backgroundColor": "#FFFFFF"
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Title"
+}

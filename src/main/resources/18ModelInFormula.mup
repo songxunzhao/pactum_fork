@@ -1,0 +1,65 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Hello, [name]! Type in a price:",
+      "id": 1,
+      "attr": {
+        "position": [
+          -14,
+          -15,
+          1
+        ],
+        "style": {
+          "width": 168,
+          "backgroundColor": "#FFFFFF"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "{price}",
+          "id": "2.f745.dc70c5aaf-4010.f36e69ad1",
+          "ideas": {
+            "1": {
+              "title": "{price} is smaller than [limit].",
+              "id": "3.f745.dc70c5aaf-4010.f36e69ad1",
+              "ideas": {},
+              "attr": {
+                "parentConnector": {
+                  "label": "steps[\"{price}\"].value < [limit]"
+                },
+                "style": {
+                  "backgroundColor": "#FFFFFF"
+                }
+              }
+            },
+            "2": {
+              "title": "{price} larger than or equal to [limit].",
+              "id": "4.f745.dc70c5aaf-4010.f36e69ad1",
+              "ideas": {},
+              "attr": {
+                "parentConnector": {
+                  "label": "steps[\"{price}\"].value >= [limit]"
+                },
+                "style": {
+                  "backgroundColor": "#FFFFFF"
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#CCFFFF"
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Hi!",
+  "links": [],
+  "attr": {
+    "theme": "topdownStandard"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "3": {
+      "title": "What do you want to buy?",
+      "id": "120.7e96.caf729688-8c73.187d5840d",
+      "attr": {
+        "position": [
+          -2356,
+          -817,
+          1
+        ],
+        "style": {
+          "backgroundColor": "#FFFFFF",
+          "width": 164
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "{cart}",
+          "id": "121.612b.42960491-4fd8.76509c8ba",
+          "attr": {
+            "style": {
+              "backgroundColor": "#FFFF99"
+            },
+            "note": {
+              "index": 2,
+              "text": "<step_properties>\n{\n  \"choices\": [\n    { \n      \"label\": \"Guitar\", \n      \"value\": {\n        \"name\": \"Guitar\",\n        \"price\": 100\n      } \n    },\n    { \n      \"label\": \"Drum\", \n      \"value\": {\n        \"name\": \"Drum\",\n        \"price\": 150\n      } \n    },\n    { \n      \"label\": \"Piano\", \n      \"value\": {\n        \"name\": \"Piano\",\n        \"price\": 300\n      } \n    }\n  ]\n}\n</step_properties>"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Total price: {totalPrice}\nItems bought: {itemsBought}",
+              "id": "122.612b.42960491-4fd8.76509c8ba",
+              "attr": {
+                "style": {
+                  "backgroundColor": "#FFFFFF"
+                },
+                "note": {
+                  "index": 3,
+                  "text": "<eval_expression>\nvalues[\"{totalPrice}\"] = previousValues[\"{cart}\"].reduce(\n\t(totalPrice, item) => totalPrice + item.price,\n\t0\n);\n\n\nvalues[\"{itemsBought}\"] = previousValues[\"{cart}\"].reduce(\n\t(itemsBought, item) => itemsBought + '\\n' + item.name + \"\\t $\" + item.price,\n\t\"\"\n);\n</eval_expression>"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Hi!",
+  "links": []
+}

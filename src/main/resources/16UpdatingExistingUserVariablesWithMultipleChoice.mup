@@ -1,0 +1,162 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Hello!",
+      "id": 1,
+      "attr": {
+        "position": [
+          -115,
+          -30,
+          1
+        ],
+        "style": {
+          "width": 50,
+          "backgroundColor": "#FFFFFF"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Type a number",
+          "id": "2.f745.dc70c5aaf-4010.f36e69ad1",
+          "ideas": {
+            "3": {
+              "title": "{number}",
+              "attr": {
+                "style": {
+                  "backgroundColor": "#CCFFFF"
+                },
+                "note": {
+                  "index": 4,
+                  "text": "<eval_expression>1==1</eval_expression>"
+                }
+              },
+              "ideas": {
+                "1": {
+                  "title": "Thanks! {number}",
+                  "attr": {
+                    "style": {
+                      "backgroundColor": "#FFFFFF",
+                      "width": 95
+                    },
+                    "parentConnector": {
+                      "label": "value >= 100"
+                    },
+                    "position": [
+                      733,
+                      -10,
+                      3
+                    ]
+                  },
+                  "ideas": {},
+                  "id": "46.1bc3.bfbfa4b98-cedb.350171cef"
+                },
+                "2": {
+                  "title": "You entered below 100:\n{number}",
+                  "attr": {
+                    "position": [
+                      120,
+                      174,
+                      4
+                    ],
+                    "parentConnector": {
+                      "label": "value < 100"
+                    },
+                    "style": {
+                      "backgroundColor": "#FFFFFF",
+                      "width": 147
+                    }
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "Choose again",
+                      "attr": {
+                        "style": {
+                          "backgroundColor": "#FFFFFF"
+                        },
+                        "parentConnector": {
+                          "label": "{number}"
+                        },
+                        "position": [
+                          257,
+                          5,
+                          1
+                        ]
+                      },
+                      "ideas": {
+                        "1": {
+                          "title": "Option C",
+                          "attr": {
+                            "parentConnector": {
+                              "label": "45"
+                            },
+                            "position": [
+                              166,
+                              -29,
+                              2
+                            ]
+                          },
+                          "ideas": {},
+                          "id": "53.1bc3.bfbfa4b98-cedb.350171cef"
+                        },
+                        "2": {
+                          "title": "Option D",
+                          "attr": {
+                            "parentConnector": {
+                              "label": "60"
+                            },
+                            "position": [
+                              157,
+                              54,
+                              3
+                            ]
+                          },
+                          "ideas": {},
+                          "id": "54.1bc3.bfbfa4b98-cedb.350171cef"
+                        }
+                      },
+                      "id": "52.1bc3.bfbfa4b98-cedb.350171cef"
+                    }
+                  },
+                  "id": "47.1bc3.bfbfa4b98-cedb.350171cef"
+                }
+              },
+              "id": "45.1bc3.bfbfa4b98-cedb.350171cef"
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FFFFFF"
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Hi!",
+  "links": [
+    {
+      "ideaIdFrom": "53.1bc3.bfbfa4b98-cedb.350171cef",
+      "ideaIdTo": "46.1bc3.bfbfa4b98-cedb.350171cef",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": "54.1bc3.bfbfa4b98-cedb.350171cef",
+      "ideaIdTo": "46.1bc3.bfbfa4b98-cedb.350171cef",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Hello!",
+      "id": 1,
+      "attr": {
+        "position": [
+          -115,
+          -30,
+          1
+        ],
+        "style": {
+          "width": 50,
+          "backgroundColor": "#FFFFFF"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Choose one!",
+          "id": "2.f745.dc70c5aaf-4010.f36e69ad1",
+          "ideas": {
+            "1": {
+              "title": "Option A",
+              "id": "3.f745.dc70c5aaf-4010.f36e69ad1",
+              "ideas": {
+                "1": {
+                  "title": "Thanks! \n{firstOption}",
+                  "id": "5.f745.dc70c5aaf-4010.f36e69ad1",
+                  "attr": {
+                    "style": {
+                      "backgroundColor": "#FFFFFF",
+                      "width": 50
+                    },
+                    "position": [
+                      436,
+                      -7,
+                      1
+                    ]
+                  }
+                }
+              },
+              "attr": {
+                "parentConnector": {
+                  "label": "15"
+                }
+              }
+            },
+            "2": {
+              "title": "Option B",
+              "id": "4.f745.dc70c5aaf-4010.f36e69ad1",
+              "ideas": {
+                "2": {
+                  "title": "Choose again",
+                  "attr": {
+                    "style": {
+                      "backgroundColor": "#FFFFFF"
+                    },
+                    "parentConnector": {
+                      "label": "{firstOption}"
+                    },
+                    "position": [
+                      146,
+                      -5,
+                      1
+                    ]
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "Option C",
+                      "attr": {
+                        "parentConnector": {
+                          "label": "45"
+                        },
+                        "position": [
+                          166,
+                          -29,
+                          2
+                        ]
+                      },
+                      "ideas": {},
+                      "id": "42.0372.728fb8bd3-2d8c.f333f6a69"
+                    },
+                    "2": {
+                      "title": "Option D",
+                      "attr": {
+                        "parentConnector": {
+                          "label": "60"
+                        },
+                        "position": [
+                          157,
+                          54,
+                          3
+                        ]
+                      },
+                      "ideas": {},
+                      "id": "44.0372.728fb8bd3-2d8c.f333f6a69"
+                    }
+                  },
+                  "id": "41.0372.728fb8bd3-2d8c.f333f6a69"
+                }
+              },
+              "attr": {
+                "parentConnector": {
+                  "label": "30"
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FFFFFF"
+            },
+            "position": [
+              172,
+              -1,
+              1
+            ],
+            "parentConnector": {
+              "label": "{firstOption}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Hi!",
+  "links": [
+    {
+      "ideaIdFrom": "42.0372.728fb8bd3-2d8c.f333f6a69",
+      "ideaIdTo": "5.f745.dc70c5aaf-4010.f36e69ad1",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": "44.0372.728fb8bd3-2d8c.f333f6a69",
+      "ideaIdTo": "5.f745.dc70c5aaf-4010.f36e69ad1",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    }
+  ]
+}

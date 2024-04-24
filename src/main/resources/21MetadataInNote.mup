@@ -1,0 +1,77 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "3": {
+      "title": "Hi! This message should be overwritten by Metadata.",
+      "id": "120.7e96.caf729688-8c73.187d5840d",
+      "attr": {
+        "position": [
+          -1150.3333435058594,
+          -663.6666717529297,
+          1
+        ],
+        "style": {
+          "backgroundColor": "#FFFFFF"
+        },
+        "note": {
+          "index": 12,
+          "text": "<step_properties>\n{\n  \"message\": \"Hi! This is the proper response after being overwritten by Metadata. Please enter your salary!\"\n}\n</step_properties>"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "{salary}",
+          "id": "121.7e96.caf729688-8c73.187d5840d",
+          "attr": {
+            "style": {
+              "backgroundColor": "#CCFFFF"
+            },
+            "note": {
+              "index": 2,
+              "text": "<step_properties>\n{\n  \"format\": \"currency\"\n}\n</step_properties>"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "You are rich!",
+              "id": "122.7e96.caf729688-8c73.187d5840d",
+              "attr": {
+                "style": {
+                  "backgroundColor": "#FFFFFF"
+                },
+                "parentConnector": {
+                  "label": "value >= 100000"
+                },
+                "position": [
+                  133.66665649414062,
+                  -115.33333587646484,
+                  1
+                ]
+              }
+            },
+            "2": {
+              "title": "You are not that rich!",
+              "id": "123.7e96.caf729688-8c73.187d5840d",
+              "attr": {
+                "style": {
+                  "backgroundColor": "#FFFFFF"
+                },
+                "parentConnector": {
+                  "label": "value < 100000"
+                },
+                "position": [
+                  83.66665649414062,
+                  104.66666412353516,
+                  2
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Hi!",
+  "links": []
+}

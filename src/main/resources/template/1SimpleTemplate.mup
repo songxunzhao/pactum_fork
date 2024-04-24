@@ -1,0 +1,49 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Start",
+      "id": 1,
+      "attr": {
+        "position": [
+          -14,
+          -15,
+          1
+        ],
+        "style": {
+          "width": 50,
+          "backgroundColor": "#FFFFFF"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Multiple way pattern",
+          "id": "2.7471.fb90c5909-a082.f1214b64d",
+          "attr": {
+            "style": {
+              "backgroundColor": "#4ef542"
+            },
+            "note": {
+              "index": 2,
+              "text": "1SimplePattern"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Stop",
+              "id": "3.8909.244021be6-c712.4f8d3e3a3",
+              "attr": {
+                "style": {
+                  "backgroundColor": "#FFFFFF"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Hi!",
+  "links": []
+}

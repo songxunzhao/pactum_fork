@@ -1,0 +1,226 @@
+spring:
+  application:
+    name: 'Pactum'
+  datasource:
+    platform: POSTGRESQL
+    url: jdbc:postgresql://localhost:5432/pactum
+    username: pactum
+    password: pactum
+    hikari.data-source-properties: stringtype=unspecified
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+    mapper:
+      ACCEPT_CASE_INSENSITIVE_ENUMS: true
+  aop:
+    auto: true
+  flyway:
+    locations: classpath:/db/migration
+  cloud:
+    gcp:
+      project-id: pactum-1
+      credentials:
+        encoded-key: ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAicGFjdHVtLTEiLAogICJwcml2YXRlX2tleV9pZCI6ICI2MzhmMDFhMDkyZGZjMWZmYmU1MjFlNTUyMzBlY2MxM2Q5NGUyZmIzIiwKICAicHJpdmF0ZV9rZXkiOiAiLS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tXG5NSUlFdlFJQkFEQU5CZ2txaGtpRzl3MEJBUUVGQUFTQ0JLY3dnZ1NqQWdFQUFvSUJBUURKQXBudjRVN25hUVhrXG5RSWZ0YUw2U3MwMzRiOFhxdkZNWHh2OWtYQWxKRlR6YVRSaEw3WThIQ1A0bm9iQkM4dFU2QTMwOGFGUFJvc1Y3XG4xdytCODR0K3RYZFpqSzVHM3RzRjAxMjVINHV2Y2pGVHByaGFyTytxelVsTXJIaVlaRU00WVBQT1I5TTRaY1VYXG4vQy9YU3VVU2ZUV1duSUptY3NTZEVKMGEyaFUzM293OEVubkZsNUVuTmpEWW5WNWk3Q1RkUU43cDdMY21OK0ZrXG44MkttVFBaRVFtNEloSFFVb2FjRkMybVFrMTJwWldCVlNaUnp0VittWEJoQkF5OHBrNjhsSlNKSGUwcWhuVzZUXG4zQU1aU0JHVkViMmVJdHY2ZCt6U28wYnZ5VzV3OHFHQngyL3E1b1hObzBkdkJXMUpvNVIrakVhL3NzSTRjakNrXG5Yb2VKK0t1dEFnTUJBQUVDZ2dFQUF2T0xFNUxWRUFCQ2dpS3hiRHF5dTZBdTE2UTZmWE1VN0Q4emZrTjhybXBGXG5xYlhpa3JEUy9na3poQnp6WTlSQmJiZmg1WnBwaXFVdmJaMVBnTHEwOUdBUk44c2hQdkNrT2g1cm5KMTZOVklCXG5wK2NGZzIxUkdvcW5saHpkSzIyamNBYzZaUys0U2ZaeWthTFdCL3oxUnBONGp6VE9sRmNBakliVEs3TUNoejZ5XG5Wc0xjKzRDaURENXAzZ0d0WmNQam95R3Mya1h6ZktRU1c5ajluUVRQYy9Mc1dLNXc0ZEZLNFBnQ3NkNHljMVNiXG5INWRSSzlzNElpS0gzU2NlUVNVS2h6N2lWZVpRRlpxNTkwWjNsazRVc0hWZjdIWkFHcGo3eTlIcmxXcXpFUit3XG5lTnNHajBMekM2ZjZQdzFTSWwrVFJhM1hMbVc3YUh6aDBVTStTUHlOU1FLQmdRRHlrVUU3aDJONDlFQmZqUVkvXG53V3U3SDhZb0tFTG9xYzlHZEpOY1VRNy9saGVKa2dnbFJpRFhaUnNhajZaRGIySlZxRUx2RkZWTG5wU1hYcE5IXG5xY1ZTMzhYVU1mS3V4ZGF3d3g2c2dZeFQvM2kwS1krMVI4M1VkN1owU1QrWXZlVWdOeTlKd2t3dlE5Wk1pWG1sXG5ldDh1VXpraTNReHNHTXJPSk1QNXY0b0NDUUtCZ1FEVUpEWlhXbkNiSUFQU1lYWGp5THV6T3FMUytJVTVGQW1nXG52eko1cVAvWm5OZFh3OExiMzY3WnpFT3JhMTlJZ3NKNDFQTEJodWxzL24yY1BQYUwraHQzaDljQXVSeFZZUXc1XG4vWlh2R0pZcDJueG04a3psOVBQUlBhdFYybWh6WUlMZS9qMlZmTjZoSXFMbm1jVzZkREMwMmErZ21LVjAvaDhuXG43akhyY1h2MWhRS0JnUUN4dm55VmVXMExtYmQrRE9HeVlESm9DUzEwQ2FTVnhyRExDT3RlYjB0VlFBOTVVRmZGXG5zSENxUlQwcUptOEg1UnVpZHN5dFVqSDZXbmE1d0tTZGs2cXpRcVE5REdpdlp1c2QxYXlwYmJoOWFLdHpJUzFjXG5BZ1N5bHhKTWZjd3JTYU1YQ3prTWpHSzFFN2w1bGhkY2lmLzJleWRZQTdCeG1XMHF4MGdQdnlvS3VRS0JnSEZyXG5sdjRuSlhOYXI1Qm9lUjQ2OFZmRzdzejdBRWRmRmpLeVpxc3pGdTlpOHFOQ3o4aThsQUJ3UEhIRzYxK2FRWjFXXG54UitCSVFZY0hrNU5MY2Z6QllKbnh5VGswMmcyaGRIdmFaMDJ1UHBSalJlQlRtbllDQStEK0Ruamx0cXc2K2VMXG5hS09tNm1TZVh4aVNWMnZ6dVNMSURDVkIxNXh3VFhvTTJQVzNhLzM5QW9HQWZMaUhnOXVSRVV6bzIxL2RGdCtWXG41TGRZWjRWV0IwdjZZWkcwYlVDQW1hTmdYQ3E5Z2UxSW83WDR2V1RaL3dKVGkyTkxqOXhObGs1cnJBZ2swSXBEXG5KVElhZWhsSjZSbEI2QmM4ZFk0aTNLZ3hNaTBTb1ErRHhidUVpOERBUE5JSjRXMXl2Mmx1TlJEV09sUTJIWnlkXG53S0NaTzgycXpRRkpISGh5N1VUUFdUWT1cbi0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS1cbiIsCiAgImNsaWVudF9lbWFpbCI6ICJnb29nbGVkcml2ZUBwYWN0dW0tMS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsCiAgImNsaWVudF9pZCI6ICIxMTQ4NjcyMzExNTU5NDAzODE0NjgiLAogICJhdXRoX3VyaSI6ICJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvYXV0aCIsCiAgInRva2VuX3VyaSI6ICJodHRwczovL29hdXRoMi5nb29nbGVhcGlzLmNvbS90b2tlbiIsCiAgImF1dGhfcHJvdmlkZXJfeDUwOV9jZXJ0X3VybCI6ICJodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9vYXV0aDIvdjEvY2VydHMiLAogICJjbGllbnRfeDUwOV9jZXJ0X3VybCI6ICJodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9yb2JvdC92MS9tZXRhZGF0YS94NTA5L2dvb2dsZWRyaXZlJTQwcGFjdHVtLTEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iCn0K
+  mvc:
+    log-request-details: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+management:
+  metrics:
+    export:
+      datadog:
+        apiKey: f03af1577819c80204cdd995f263bcc2
+        applicationKey: 373c52904cbff739b1ec1c4966d6250d06f30e46
+        enabled: true
+        step: PT1M
+    tags:
+      env: dev
+
+opentracing:
+  spring:
+    web:
+      skip-pattern: /api/v1/health/get
+
+logbook:
+  exclude: [/api/v1/health/get, /actuator/health]
+  strategy: without-body
+  obfuscate:
+    headers: [Authorization]
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /api/docs
+
+server:
+  tomcat:
+    accesslog:
+      enabled: true
+      max-days: 30
+    remoteip:
+      remote-ip-header: x-forwarded-for
+      protocol-header: x-forwarded-proto
+  error:
+    include-exception: true
+    include-stacktrace: never
+    whitelabel:
+      enabled: false
+  baseUrl: 'http://localhost:8080'
+  adminUrl: 'https://localhost:3000'
+  cookieMaxAge: 86400
+  servlet:
+    session:
+      tracking-modes: COOKIE
+  env: dev
+  service: pactum
+
+docusign:
+  baseUrl: https://demo.docusign.net/restapi/v2.1/accounts/9044113
+  username: kristjan@pactum.com
+  password: p+kTYbp1g95+yZ1tS8EKtNGEYws=
+  clientId: 2012a00c-9cea-42c1-a824-f7319c07c791
+
+mailchimp:
+  api:
+    token: 63acf459cb731408197c6ed14e59e625-us3
+    url: https://us3.api.mailchimp.com/3.0/
+
+chat:
+  defaultFlowId: 1fbjO6mJVyCCMOZdQO90qLfXCxghoX4Ps
+  pactumClientTag: pactum
+  secretStateId: saladus
+  scriptEngine: JS
+
+google:
+  credentials:
+    serviceAccount: ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAicGFjdHVtLTEiLAogICJwcml2YXRlX2tleV9pZCI6ICI2MzhmMDFhMDkyZGZjMWZmYmU1MjFlNTUyMzBlY2MxM2Q5NGUyZmIzIiwKICAicHJpdmF0ZV9rZXkiOiAiLS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tXG5NSUlFdlFJQkFEQU5CZ2txaGtpRzl3MEJBUUVGQUFTQ0JLY3dnZ1NqQWdFQUFvSUJBUURKQXBudjRVN25hUVhrXG5RSWZ0YUw2U3MwMzRiOFhxdkZNWHh2OWtYQWxKRlR6YVRSaEw3WThIQ1A0bm9iQkM4dFU2QTMwOGFGUFJvc1Y3XG4xdytCODR0K3RYZFpqSzVHM3RzRjAxMjVINHV2Y2pGVHByaGFyTytxelVsTXJIaVlaRU00WVBQT1I5TTRaY1VYXG4vQy9YU3VVU2ZUV1duSUptY3NTZEVKMGEyaFUzM293OEVubkZsNUVuTmpEWW5WNWk3Q1RkUU43cDdMY21OK0ZrXG44MkttVFBaRVFtNEloSFFVb2FjRkMybVFrMTJwWldCVlNaUnp0VittWEJoQkF5OHBrNjhsSlNKSGUwcWhuVzZUXG4zQU1aU0JHVkViMmVJdHY2ZCt6U28wYnZ5VzV3OHFHQngyL3E1b1hObzBkdkJXMUpvNVIrakVhL3NzSTRjakNrXG5Yb2VKK0t1dEFnTUJBQUVDZ2dFQUF2T0xFNUxWRUFCQ2dpS3hiRHF5dTZBdTE2UTZmWE1VN0Q4emZrTjhybXBGXG5xYlhpa3JEUy9na3poQnp6WTlSQmJiZmg1WnBwaXFVdmJaMVBnTHEwOUdBUk44c2hQdkNrT2g1cm5KMTZOVklCXG5wK2NGZzIxUkdvcW5saHpkSzIyamNBYzZaUys0U2ZaeWthTFdCL3oxUnBONGp6VE9sRmNBakliVEs3TUNoejZ5XG5Wc0xjKzRDaURENXAzZ0d0WmNQam95R3Mya1h6ZktRU1c5ajluUVRQYy9Mc1dLNXc0ZEZLNFBnQ3NkNHljMVNiXG5INWRSSzlzNElpS0gzU2NlUVNVS2h6N2lWZVpRRlpxNTkwWjNsazRVc0hWZjdIWkFHcGo3eTlIcmxXcXpFUit3XG5lTnNHajBMekM2ZjZQdzFTSWwrVFJhM1hMbVc3YUh6aDBVTStTUHlOU1FLQmdRRHlrVUU3aDJONDlFQmZqUVkvXG53V3U3SDhZb0tFTG9xYzlHZEpOY1VRNy9saGVKa2dnbFJpRFhaUnNhajZaRGIySlZxRUx2RkZWTG5wU1hYcE5IXG5xY1ZTMzhYVU1mS3V4ZGF3d3g2c2dZeFQvM2kwS1krMVI4M1VkN1owU1QrWXZlVWdOeTlKd2t3dlE5Wk1pWG1sXG5ldDh1VXpraTNReHNHTXJPSk1QNXY0b0NDUUtCZ1FEVUpEWlhXbkNiSUFQU1lYWGp5THV6T3FMUytJVTVGQW1nXG52eko1cVAvWm5OZFh3OExiMzY3WnpFT3JhMTlJZ3NKNDFQTEJodWxzL24yY1BQYUwraHQzaDljQXVSeFZZUXc1XG4vWlh2R0pZcDJueG04a3psOVBQUlBhdFYybWh6WUlMZS9qMlZmTjZoSXFMbm1jVzZkREMwMmErZ21LVjAvaDhuXG43akhyY1h2MWhRS0JnUUN4dm55VmVXMExtYmQrRE9HeVlESm9DUzEwQ2FTVnhyRExDT3RlYjB0VlFBOTVVRmZGXG5zSENxUlQwcUptOEg1UnVpZHN5dFVqSDZXbmE1d0tTZGs2cXpRcVE5REdpdlp1c2QxYXlwYmJoOWFLdHpJUzFjXG5BZ1N5bHhKTWZjd3JTYU1YQ3prTWpHSzFFN2w1bGhkY2lmLzJleWRZQTdCeG1XMHF4MGdQdnlvS3VRS0JnSEZyXG5sdjRuSlhOYXI1Qm9lUjQ2OFZmRzdzejdBRWRmRmpLeVpxc3pGdTlpOHFOQ3o4aThsQUJ3UEhIRzYxK2FRWjFXXG54UitCSVFZY0hrNU5MY2Z6QllKbnh5VGswMmcyaGRIdmFaMDJ1UHBSalJlQlRtbllDQStEK0Ruamx0cXc2K2VMXG5hS09tNm1TZVh4aVNWMnZ6dVNMSURDVkIxNXh3VFhvTTJQVzNhLzM5QW9HQWZMaUhnOXVSRVV6bzIxL2RGdCtWXG41TGRZWjRWV0IwdjZZWkcwYlVDQW1hTmdYQ3E5Z2UxSW83WDR2V1RaL3dKVGkyTkxqOXhObGs1cnJBZ2swSXBEXG5KVElhZWhsSjZSbEI2QmM4ZFk0aTNLZ3hNaTBTb1ErRHhidUVpOERBUE5JSjRXMXl2Mmx1TlJEV09sUTJIWnlkXG53S0NaTzgycXpRRkpISGh5N1VUUFdUWT1cbi0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS1cbiIsCiAgImNsaWVudF9lbWFpbCI6ICJnb29nbGVkcml2ZUBwYWN0dW0tMS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsCiAgImNsaWVudF9pZCI6ICIxMTQ4NjcyMzExNTU5NDAzODE0NjgiLAogICJhdXRoX3VyaSI6ICJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvYXV0aCIsCiAgInRva2VuX3VyaSI6ICJodHRwczovL29hdXRoMi5nb29nbGVhcGlzLmNvbS90b2tlbiIsCiAgImF1dGhfcHJvdmlkZXJfeDUwOV9jZXJ0X3VybCI6ICJodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9vYXV0aDIvdjEvY2VydHMiLAogICJjbGllbnRfeDUwOV9jZXJ0X3VybCI6ICJodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9yb2JvdC92MS9tZXRhZGF0YS94NTA5L2dvb2dsZWRyaXZlJTQwcGFjdHVtLTEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iCn0K
+  drive:
+    cacheTime: 5
+    metadataTimeout: 1000
+    contentTimeout: 3000
+  storage:
+    assetsBucketName: pactum-assets-dev
+    clientFilesBucketName: pactum-client-files-dev
+
+auth:
+  clientSecret: K-5WXzip_SDyEjx09bY8sZIE1vB56nhG
+  clientId: DqloICf2WI2dlkm3Kvr4PngAV4syfkDG
+  issuer: https://login.pactum.com/
+---
+spring:
+  profiles: test
+  datasource:
+    url: jdbc:postgresql://localhost:5435/pactum
+
+management:
+  metrics:
+    export:
+      datadog:
+        enabled: false
+
+embedded:
+  postgres:
+    enabled: true
+    dbName: pactum
+    port: 5435
+    username: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+---
+spring:
+  profiles: ci
+  datasource:
+    url: jdbc:postgresql://postgres:5432/pactum
+
+management:
+  metrics:
+    export:
+      datadog:
+        enabled: false
+---
+spring:
+  profiles: development
+  flyway:
+    locations: classpath:/db/migration,classpath:/db/development
+
+management:
+  metrics:
+    tags:
+      env: development
+
+logging:
+  level:
+    sql: DEBUG
+
+logbook:
+  strategy: default
+  obfuscate:
+    headers: [Nothing]
+---
+spring:
+  profiles: staging
+  datasource:
+    url: jdbc:postgresql://10.86.240.19:5432/staging
+
+management:
+  metrics:
+    tags:
+      env: staging
+
+server:
+  baseUrl: 'https://staging.pactum.com'
+  adminUrl: 'https://admin-staging.pactum.com'
+  env: staging
+
+google:
+  storage:
+    assetsBucketName: pactum-assets-staging
+    clientFilesBucketName: pactum-client-files-staging
+
+auth:
+  clientId: J6PO25twCeDMppk9LExKVWXZ3mnuj8Gd
+  issuer: https://login-staging.pactum.com/
+---
+spring:
+  profiles: sandbox
+  datasource:
+    url: jdbc:postgresql://10.86.240.19:5432/sandbox
+
+management:
+  metrics:
+    tags:
+      env: sandbox
+
+server:
+  baseUrl: 'https://sandbox.pactum.com'
+  adminUrl: 'https://admin-sandbox.pactum.com'
+  env: sandbox
+
+auth:
+  clientId: J6PO25twCeDMppk9LExKVWXZ3mnuj8Gd
+  issuer: https://login-staging.pactum.com/
+---
+spring:
+  profiles: production
+  datasource:
+    url: jdbc:postgresql://10.86.240.3:5432/pactum
+
+management:
+  metrics:
+    tags:
+      env: production
+
+server:
+  baseUrl: 'https://www.pactum.com'
+  adminUrl: 'https://admin.pactum.com'
+  env: production
+
+google:
+  drive:
+    cacheTime: 120
+  storage:
+    assetsBucketName: pactum-assets-prod
+    clientFilesBucketName: pactum-client-files-prod

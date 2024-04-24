@@ -1,0 +1,168 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Hello!",
+      "id": 1,
+      "attr": {
+        "position": [
+          -14,
+          -28,
+          1
+        ],
+        "style": {
+          "width": 50,
+          "backgroundColor": "#FFFFFF"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Choose one!",
+          "id": "2.f745.dc70c5aaf-4010.f36e69ad1",
+          "ideas": {
+            "1": {
+              "title": "Option A",
+              "id": "3.f745.dc70c5aaf-4010.f36e69ad1",
+              "ideas": {
+                "1": {
+                  "title": "Thanks!",
+                  "id": "5.f745.dc70c5aaf-4010.f36e69ad1",
+                  "attr": {
+                    "style": {
+                      "backgroundColor": "#FFFFFF",
+                      "width": 50
+                    },
+                    "position": [
+                      730,
+                      3,
+                      1
+                    ]
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "Option B",
+              "id": "4.f745.dc70c5aaf-4010.f36e69ad1",
+              "ideas": {
+                "1": {
+                  "title": "Choose again",
+                  "id": "6.f745.dc70c5aaf-4010.f36e69ad1",
+                  "ideas": {
+                    "2": {
+                      "title": "Option C",
+                      "id": "10.f745.dc70c5aaf-4010.f36e69ad1",
+                      "attr": {
+                        "style": {
+                          "width": 63
+                        }
+                      },
+                      "ideas": {
+                        "1": {
+                          "title": "Type a number",
+                          "attr": {
+                            "style": {
+                              "width": 93,
+                              "backgroundColor": "#FFFFFF"
+                            }
+                          },
+                          "ideas": {
+                            "2": {
+                              "title": "{number}",
+                              "id": "14.306b.5891d1449-d168.a8ecf6009",
+                              "attr": {
+                                "style": {
+                                  "backgroundColor": "#CCFFFF"
+                                }
+                              },
+                              "ideas": {
+                                "1": {
+                                  "title": "You entered over 100 entered: {previousValue}",
+                                  "id": "15.306b.5891d1449-d168.a8ecf6009",
+                                  "attr": {
+                                    "style": {
+                                      "backgroundColor": "#FFFFFF",
+                                      "width": 95
+                                    },
+                                    "parentConnector": {
+                                      "label": "value >= 100"
+                                    },
+                                    "position": [
+                                      158,
+                                      -9,
+                                      1
+                                    ]
+                                  },
+                                  "ideas": {}
+                                },
+                                "2": {
+                                  "title": "You entered below 100:\n{previousValue}",
+                                  "id": "17.6fe7.3162047-efd2.e2d2e9328",
+                                  "attr": {
+                                    "position": [
+                                      154,
+                                      95,
+                                      2
+                                    ],
+                                    "parentConnector": {
+                                      "label": "value < 100"
+                                    },
+                                    "style": {
+                                      "backgroundColor": "#FFFFFF",
+                                      "width": 147
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "id": "11.306b.5891d1449-d168.a8ecf6009"
+                        }
+                      }
+                    }
+                  },
+                  "attr": {
+                    "style": {
+                      "backgroundColor": "#FFFFFF"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FFFFFF"
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Hi!",
+  "links": [
+    {
+      "ideaIdFrom": "15.306b.5891d1449-d168.a8ecf6009",
+      "ideaIdTo": "5.f745.dc70c5aaf-4010.f36e69ad1",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": "17.6fe7.3162047-efd2.e2d2e9328",
+      "ideaIdTo": "5.f745.dc70c5aaf-4010.f36e69ad1",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    }
+  ]
+}

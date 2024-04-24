@@ -1,0 +1,287 @@
+{
+  "id": "NWbmSU",
+  "title": "test typeform",
+  "theme": {
+    "href": "https://api.typeform.com/themes/iiqmFb"
+  },
+  "workspace": {
+    "href": "https://api.typeform.com/workspaces/HYGxtf"
+  },
+  "settings": {
+    "is_public": false,
+    "is_trial": true,
+    "language": "en",
+    "progress_bar": "percentage",
+    "show_progress_bar": false,
+    "show_typeform_branding": true,
+    "meta": {
+      "allow_indexing": false
+    }
+  },
+  "thankyou_screens": [
+    {
+      "ref": "default_tys",
+      "title": "Thanks for completing this typeform\nNow *create your own* — it's free, easy, & beautiful",
+      "properties": {
+        "show_button": true,
+        "share_icons": false,
+        "button_mode": "redirect",
+        "button_text": "Create a *typeform*",
+        "redirect_url": "https://admin.typeform.com/powered-by?utm_campaign=NWbmSU&utm_source=typeform.com-14006724-Basic&utm_medium=typeform&utm_content=typeform-thankyoubutton&utm_term=EN"
+      },
+      "attachment": {
+        "type": "image",
+        "href": "https://images.typeform.com/images/2dpnUBBkz2VN"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "id": "aQUv8BdrlK1Y",
+      "title": "What?",
+      "ref": "0e80096b-aa75-4d54-acd7-247ab4047cfa",
+      "properties": {
+        "randomize": false,
+        "allow_multiple_selection": false,
+        "allow_other_choice": false,
+        "vertical_alignment": true,
+        "choices": [
+          {
+            "id": "NqtSCOiq1HZQ",
+            "ref": "f1a58776-de85-4bf7-9e5a-e47ceb3a06a1",
+            "label": "yes"
+          },
+          {
+            "id": "hmbPXcTIbCFI",
+            "ref": "17abc5a7-da77-48db-8484-aa746564bbec",
+            "label": "no"
+          },
+          {
+            "id": "xmWDNqQXeGUP",
+            "ref": "b85b766d-ac8f-4760-a5e6-1308daeededd",
+            "label": "maybe"
+          }
+        ]
+      },
+      "validations": {
+        "required": true
+      },
+      "type": "multiple_choice"
+    },
+    {
+      "id": "R8UxyUdFQUaH",
+      "title": "And then?",
+      "ref": "83d01720-dc1b-4cf2-9f13-ef833d26e026",
+      "properties": {
+        "randomize": false,
+        "allow_multiple_selection": false,
+        "allow_other_choice": false,
+        "vertical_alignment": true,
+        "choices": [
+          {
+            "id": "LNotjrGrT1Hk",
+            "ref": "78d79118-0589-449b-9999-cba707730448",
+            "label": "lol"
+          },
+          {
+            "id": "VJfqZOvtstAp",
+            "ref": "39f2e5f5-f1fd-4213-b617-cc91fdd47f9e",
+            "label": "wat"
+          }
+        ]
+      },
+      "validations": {
+        "required": true
+      },
+      "type": "multiple_choice"
+    },
+    {
+      "id": "IqLl3XYLhTVz",
+      "title": "Why not?",
+      "ref": "2e080aeb-b90f-4ca7-8769-6339491ab6b4",
+      "properties": {
+        "randomize": false,
+        "allow_multiple_selection": false,
+        "allow_other_choice": false,
+        "vertical_alignment": true,
+        "choices": [
+          {
+            "id": "RbugCOyvUvXw",
+            "ref": "8d1d882b-d1a9-4a08-b6a6-98bb24542948",
+            "label": "just becuz"
+          },
+          {
+            "id": "j8IQJYSobIOM",
+            "ref": "fb0d510f-d4cf-4f94-bdf2-012965ea2f7d",
+            "label": "no reason"
+          }
+        ]
+      },
+      "validations": {
+        "required": false
+      },
+      "type": "multiple_choice"
+    },
+    {
+      "id": "nFgQX4VLF95Z",
+      "title": "Maybe?",
+      "ref": "7df7f4f4-a13a-4673-be00-970d34312170",
+      "properties": {
+        "randomize": false,
+        "allow_multiple_selection": false,
+        "allow_other_choice": false,
+        "vertical_alignment": true,
+        "choices": [
+          {
+            "id": "DyxY2Sj8PPt3",
+            "ref": "956e85ca-ca94-4883-bee8-c9d27e75a183",
+            "label": "yes"
+          },
+          {
+            "id": "Hx7kWZjY4dnv",
+            "ref": "5fdf0a53-1ea4-4e6d-9b7d-c42d819f18b7",
+            "label": "no"
+          }
+        ]
+      },
+      "validations": {
+        "required": false
+      },
+      "type": "multiple_choice"
+    }
+  ],
+  "logic": [
+    {
+      "type": "field",
+      "ref": "0e80096b-aa75-4d54-acd7-247ab4047cfa",
+      "actions": [
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "83d01720-dc1b-4cf2-9f13-ef833d26e026"
+            }
+          },
+          "condition": {
+            "op": "is",
+            "vars": [
+              {
+                "type": "field",
+                "value": "0e80096b-aa75-4d54-acd7-247ab4047cfa"
+              },
+              {
+                "type": "choice",
+                "value": "f1a58776-de85-4bf7-9e5a-e47ceb3a06a1"
+              }
+            ]
+          }
+        },
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "2e080aeb-b90f-4ca7-8769-6339491ab6b4"
+            }
+          },
+          "condition": {
+            "op": "is",
+            "vars": [
+              {
+                "type": "field",
+                "value": "0e80096b-aa75-4d54-acd7-247ab4047cfa"
+              },
+              {
+                "type": "choice",
+                "value": "17abc5a7-da77-48db-8484-aa746564bbec"
+              }
+            ]
+          }
+        },
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "7df7f4f4-a13a-4673-be00-970d34312170"
+            }
+          },
+          "condition": {
+            "op": "is",
+            "vars": [
+              {
+                "type": "field",
+                "value": "0e80096b-aa75-4d54-acd7-247ab4047cfa"
+              },
+              {
+                "type": "choice",
+                "value": "b85b766d-ac8f-4760-a5e6-1308daeededd"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "field",
+      "ref": "83d01720-dc1b-4cf2-9f13-ef833d26e026",
+      "actions": [
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "thankyou",
+              "value": "default_tys"
+            }
+          },
+          "condition": {
+            "op": "always",
+            "vars": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "field",
+      "ref": "2e080aeb-b90f-4ca7-8769-6339491ab6b4",
+      "actions": [
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "thankyou",
+              "value": "default_tys"
+            }
+          },
+          "condition": {
+            "op": "always",
+            "vars": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "field",
+      "ref": "7df7f4f4-a13a-4673-be00-970d34312170",
+      "actions": [
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "thankyou",
+              "value": "default_tys"
+            }
+          },
+          "condition": {
+            "op": "always",
+            "vars": []
+          }
+        }
+      ]
+    }
+  ],
+  "_links": {
+    "display": "https://erko035680.typeform.com/to/NWbmSU"
+  }
+}

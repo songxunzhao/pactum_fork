@@ -1,0 +1,160 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "3": {
+      "title": "What would you like in your breakfast?",
+      "id": "120.7e96.caf729688-8c73.187d5840d",
+      "attr": {
+        "position": [
+          -1972,
+          -802,
+          1
+        ],
+        "style": {
+          "backgroundColor": "#FFFFFF",
+          "width": 164
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "{breakfast}",
+          "id": "123.319f.0cecdfb52-f896.17c337d6",
+          "attr": {
+            "style": {
+              "backgroundColor": "#FFFF99"
+            },
+            "note": {
+              "index": 2,
+              "text": "<step_properties>\n{\n  \"minChoices\": 1,\n  \"maxChoices\": 5,\n  \"choices\": [\n    { \"label\": \"Egg\", \"value\": \"egg\" },\n    { \"label\": \"Toast\", \"value\": \"toast\" },\n    { \"label\": \"Coffee\", \"value\": \"coffee\" },\n    { \"label\": \"Sandwich\", \"value\": \"sandwich\" },\n    { \"label\": \"Fruits\", \"value\": \"fruits\" },\n    { \"label\": \"Beer\", \"value\": \"beer\" }\n  ]\n}\n</step_properties>"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "You eat unhealthy",
+              "id": "125.319f.0cecdfb52-f896.17c337d6",
+              "attr": {
+                "position": [
+                  431,
+                  -79,
+                  1
+                ],
+                "parentConnector": {
+                  "label": "value.includes(\"beer\") || value.length >= 5 || value.length >= 4 && !value.includes(\"fruits\")"
+                },
+                "style": {
+                  "backgroundColor": "#FFFFFF"
+                }
+              },
+              "ideas": {
+                "1": {
+                  "title": "Which continents have you been to?",
+                  "id": "128.e1e5.e10012828-4b2b.d0ba381c1",
+                  "attr": {
+                    "style": {
+                      "backgroundColor": "#FFFFFF"
+                    },
+                    "position": [
+                      217,
+                      -6,
+                      1
+                    ]
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "{visitedPlaces}",
+                      "id": "129.e1e5.e10012828-4b2b.d0ba381c1",
+                      "attr": {
+                        "style": {
+                          "backgroundColor": "#FFFF99"
+                        },
+                        "note": {
+                          "index": 5,
+                          "text": "<step_properties>\n{\n  \"minChoices\": 1,\n  \"choices\": [\n    { \"label\": \"Asia\", \"value\": \"Asia\" },\n    { \"label\": \"Europe\", \"value\": \"Europe\" },\n    { \"label\": \"North America\", \"value\": \"North America\" },\n    { \"label\": \"South America\", \"value\": \"South America\" },\n    { \"label\": \"Africa\", \"value\": \"Africa\" },\n    { \"label\": \"Australia\", \"value\": \"Australia\" },\n    { \"label\": \"Antarctica\", \"value\": \"Antarctica\" }\n  ]\n}\n</step_properties>"
+                        }
+                      },
+                      "ideas": {
+                        "1": {
+                          "title": "You've visited places like {visitedPlace0} among many others",
+                          "id": "130.e1e5.e10012828-4b2b.d0ba381c1",
+                          "attr": {
+                            "style": {
+                              "backgroundColor": "#FFFFFF"
+                            },
+                            "note": {
+                              "index": 6,
+                              "text": "<eval_expression>\nvalues[\"{visitedPlace0}\"] = previousValues[\"{visitedPlaces}\"][0];\n</eval_expression>"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "Your eating habit can improve",
+              "id": "126.319f.0cecdfb52-f896.17c337d6",
+              "attr": {
+                "style": {
+                  "backgroundColor": "#FFFFFF"
+                },
+                "position": [
+                  447,
+                  78,
+                  4
+                ],
+                "parentConnector": {
+                  "label": "value.length >= 2 && value.length < 5 && !value.includes(\"fruits\")"
+                }
+              }
+            },
+            "3": {
+              "title": "You eat healthy",
+              "id": "127.319f.0cecdfb52-f896.17c337d6",
+              "attr": {
+                "style": {
+                  "backgroundColor": "#FFFFFF"
+                },
+                "parentConnector": {
+                  "label": "value.includes(\"fruits\") || value.length < 2"
+                },
+                "position": [
+                  384,
+                  196,
+                  3
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Hi!",
+  "links": [
+    {
+      "ideaIdFrom": "126.319f.0cecdfb52-f896.17c337d6",
+      "ideaIdTo": "128.e1e5.e10012828-4b2b.d0ba381c1",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": "127.319f.0cecdfb52-f896.17c337d6",
+      "ideaIdTo": "128.e1e5.e10012828-4b2b.d0ba381c1",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    }
+  ]
+}

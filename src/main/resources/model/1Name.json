@@ -1,0 +1,31 @@
+{
+  "models": {
+    "1erewfdsa": {
+      "name": "John",
+      "integer": 2,
+      "decimalPointNumbers": 2.0,
+      "negativeNumber": -2,
+      "specialCharacters": "*_?/@"
+    },
+    "r32wefa": {
+      "name": "Armando",
+      "integer": "2",
+      "decimalPointNumbers": "2.0",
+      "negativeNumber": "-2",
+      "specialCharacters": "*_?/@"
+    },
+    "formula": {
+      "name": "Tanel",
+      "limit": 10
+    },
+    "walmart": {
+      "vendor_name": "Everglades Foods Inc",
+      "items": [
+        {
+          "number_of_units": "48807",
+          "item_id": "0"
+        }
+      ]
+    }
+  }
+}

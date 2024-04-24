@@ -1,0 +1,117 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Hi!",
+      "id": 1,
+      "attr": {
+        "position": [
+          -46,
+          -19,
+          1
+        ],
+        "style": {
+          "width": 50,
+          "backgroundColor": "#FFFFFF"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Choose!",
+          "id": "2.f745.dc70c5aaf-4010.f36e69ad1",
+          "ideas": {
+            "1": {
+              "title": "Option A",
+              "id": "3.f745.dc70c5aaf-4010.f36e69ad1",
+              "ideas": {
+                "1": {
+                  "title": "Thanks! {terms.term1}",
+                  "id": "5.f745.dc70c5aaf-4010.f36e69ad1",
+                  "attr": {
+                    "style": {
+                      "backgroundColor": "#FFFFFF",
+                      "width": 50
+                    },
+                    "note": {
+                      "index": 4,
+                      "text": "<eval_expression>\nvalues[\"{terms}\"] = {\n  term1: previousValues[\"{terms}\"].term1 + 1\n}\n</eval_expression>"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "parentConnector": {
+                  "label": "{ \"term1\": 1 }"
+                }
+              }
+            },
+            "2": {
+              "title": "Option B",
+              "id": "4.f745.dc70c5aaf-4010.f36e69ad1",
+              "ideas": {
+                "1": {
+                  "title": "Choose again",
+                  "id": "6.f745.dc70c5aaf-4010.f36e69ad1",
+                  "ideas": {
+                    "2": {
+                      "title": "Option C",
+                      "id": "10.f745.dc70c5aaf-4010.f36e69ad1",
+                      "attr": {
+                        "style": {
+                          "width": 63
+                        }
+                      },
+                      "ideas": {}
+                    }
+                  },
+                  "attr": {
+                    "style": {
+                      "backgroundColor": "#FFFFFF"
+                    },
+                    "note": {
+                      "index": 6,
+                      "text": "<eval_expression>\nvalues[\"{terms}\"] = {\n  term1: previousValues[\"{terms}\"].term1 + 2\n}\n</eval_expression>"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "parentConnector": {
+                  "label": "{ \"term1\": 2 }"
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FFFFFF"
+            },
+            "parentConnector": {
+              "label": "{terms}"
+            },
+            "position": [
+              129,
+              -3,
+              1
+            ]
+          }
+        }
+      }
+    }
+  },
+  "title": "Hi!",
+  "links": [
+    {
+      "ideaIdFrom": "10.f745.dc70c5aaf-4010.f36e69ad1",
+      "ideaIdTo": "5.f745.dc70c5aaf-4010.f36e69ad1",
+      "attr": {
+        "style": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "arrow": "to"
+        }
+      }
+    }
+  ]
+}
